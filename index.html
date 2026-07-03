@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUST NET Synonym Practice</title>
+    <title>NUST NET 100 Synonym Practice</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -75,36 +75,112 @@
 </head>
 <body>
 
-    <h1>NUST NET Synonym Practice</h1>
+    <h1>NUST NET Synonym Practice (1-100)</h1>
     <div id="quiz"></div>
 
     <script>
         const quizData = [
-            {
-                q: "What is the synonym of ABERRATION?",
-                options: ["Regularity", "Conformity", "Deviation", "Intensification"],
-                correct: 2
-            },
-            {
-                q: "What is the synonym of CAPRICIOUS?",
-                options: ["Fickle", "Steadfast", "Melancholic", "Sagacious"],
-                correct: 0
-            },
-            {
-                q: "What is the synonym of EPHEMERAL?",
-                options: ["Eternal", "Short-lived", "Monotonous", "Resilient"],
-                correct: 1
-            },
-            {
-                q: "What is the synonym of LOQUACIOUS?",
-                options: ["Taciturn", "Garrulous", "Reticent", "Diffident"],
-                correct: 1
-            },
-            {
-                q: "What is the synonym of MITIGATE?",
-                options: ["Aggravate", "Alleviate", "Provoke", "Enhance"],
-                correct: 1
-            }
+            { q: "What is the synonym of ABERRATION?", options: ["Regularity", "Conformity", "Deviation", "Intensification"], correct: 2 },
+            { q: "What is the synonym of ABSOLVE?", options: ["Accuse", "Exonerate", "Condemn", "Punish"], correct: 1 },
+            { q: "What is the synonym of ALLEVIATE?", options: ["Mitigate", "Aggravate", "Worsen", "Intensify"], correct: 0 },
+            { q: "What is the synonym of ANOMALY?", options: ["Normality", "Irregularity", "Standard", "Conformity"], correct: 1 },
+            { q: "What is the synonym of AUDACITY?", options: ["Temerity", "Cowardice", "Modesty", "Mildness"], correct: 0 },
+            { q: "What is the synonym of BANAL?", options: ["Original", "Trite", "Extraordinary", "Exciting"], correct: 1 },
+            { q: "What is the synonym of CAPRICIOUS?", options: ["Fickle", "Steadfast", "Constant", "Predictable"], correct: 0 },
+            { q: "What is the synonym of CASTIGATE?", options: ["Praise", "Chastise", "Approve", "Flatter"], correct: 1 },
+            { q: "What is the synonym of COGENT?", options: ["Weak", "Incoherent", "Compelling", "Vague"], correct: 2 },
+            { q: "What is the synonym of DEFERENCE?", options: ["Respect", "Disregard", "Contempt", "Defiance"], correct: 0 },
+            { q: "What is the synonym of DIATRIBE?", options: ["Praise", "Harangue", "Eulogy", "Recommendation"], correct: 1 },
+            { q: "What is the synonym of DIFFIDENT?", options: ["Confident", "Shy", "Bold", "Aggressive"], correct: 1 },
+            { q: "What is the synonym of DILATORY?", options: ["Prompt", "Procrastinating", "Rapid", "Diligent"], correct: 1 },
+            { q: "What is the synonym of DOGMATIC?", options: ["Flexible", "Dictatorial", "Submissive", "Ambiguous"], correct: 1 },
+            { q: "What is the synonym of ECLECTIC?", options: ["Narrow", "Varied", "Uniform", "Specific"], correct: 1 },
+            { q: "What is the synonym of ENERVATE?", options: ["Energize", "Exhaust", "Strengthen", "Invigorate"], correct: 1 },
+            { q: "What is the synonym of EPHEMERAL?", options: ["Eternal", "Transient", "Permanent", "Enduring"], correct: 1 },
+            { q: "What is the synonym of EQUIVOCAL?", options: ["Ambiguous", "Clear", "Certain", "Direct"], correct: 0 },
+            { q: "What is the synonym of ERUDITE?", options: ["Ignorant", "Scholarly", "Uneducated", "Simple"], correct: 1 },
+            { q: "What is the synonym of ESOTERIC?", options: ["Common", "Obscure", "Public", "Familiar"], correct: 1 },
+            { q: "What is the synonym of EXCULPATE?", options: ["Blame", "Exonerate", "Convict", "Accuse"], correct: 1 },
+            { q: "What is the synonym of FASTIDIOUS?", options: ["Meticulous", "Careless", "Sloppy", "Indifferent"], correct: 0 },
+            { q: "What is the synonym of FERVENT?", options: ["Apathetic", "Ardent", "Cold", "Indifferent"], correct: 1 },
+            { q: "What is the synonym of GARRULOUS?", options: ["Quiet", "Loquacious", "Silent", "Reticent"], correct: 1 },
+            { q: "What is the synonym of GULLIBLE?", options: ["Suspicious", "Credulous", "Cynical", "Astute"], correct: 1 },
+            { q: "What is the synonym of HACKNEYED?", options: ["Fresh", "Banal", "Novel", "Original"], correct: 1 },
+            { q: "What is the synonym of ICONOCLAST?", options: ["Rebel", "Follower", "Conformist", "Believer"], correct: 0 },
+            { q: "What is the synonym of IMPETUOUS?", options: ["Cautious", "Impulsive", "Deliberate", "Slow"], correct: 1 },
+            { q: "What is the synonym of INCIPIENT?", options: ["Developing", "Mature", "Final", "Concluding"], correct: 0 },
+            { q: "What is the synonym of INDOLENT?", options: ["Active", "Lazy", "Energetic", "Industrious"], correct: 1 },
+            { q: "What is the synonym of INNOCUOUS?", options: ["Harmful", "Harmless", "Toxic", "Offensive"], correct: 1 },
+            { q: "What is the synonym of INUNDATE?", options: ["Drain", "Flood", "Dry", "Evaporate"], correct: 1 },
+            { q: "What is the synonym of LACONIC?", options: ["Concise", "Verbose", "Wordy", "Lengthy"], correct: 0 },
+            { q: "What is the synonym of LOQUACIOUS?", options: ["Taciturn", "Garrulous", "Quiet", "Reserved"], correct: 1 },
+            { q: "What is the synonym of METICULOUS?", options: ["Careless", "Fastidious", "Messy", "Inaccurate"], correct: 1 },
+            { q: "What is the synonym of MITIGATE?", options: ["Aggravate", "Alleviate", "Increase", "Intensify"], correct: 1 },
+            { q: "What is the synonym of MUNDANE?", options: ["Exciting", "Banal", "Extraordinary", "Unique"], correct: 1 },
+            { q: "What is the synonym of OBDURATE?", options: ["Flexible", "Obstinate", "Yielding", "Gentle"], correct: 1 },
+            { q: "What is the synonym of OPAQUE?", options: ["Transparent", "Cloudy", "Clear", "Luminous"], correct: 1 },
+            { q: "What is the synonym of PARSIMONY?", options: ["Extravagance", "Frugality", "Generosity", "Bounty"], correct: 1 },
+            { q: "What is the synonym of PRAGMATIC?", options: ["Impractical", "Practical", "Idealistic", "Unrealistic"], correct: 1 },
+            { q: "What is the synonym of PRODIGAL?", options: ["Frugal", "Wasteful", "Stingy", "Economical"], correct: 1 },
+            { q: "What is the synonym of PRISTINE?", options: ["Unspoiled", "Ruined", "Dirty", "Contaminated"], correct: 0 },
+            { q: "What is the synonym of RETICENT?", options: ["Talkative", "Reserved", "Outgoing", "Forward"], correct: 1 },
+            { q: "What is the synonym of SPORADIC?", options: ["Continuous", "Intermittent", "Constant", "Regular"], correct: 1 },
+            { q: "What is the synonym of TACIT?", options: ["Explicit", "Implicit", "Stated", "Declared"], correct: 1 },
+            { q: "What is the synonym of TERSE?", options: ["Verbose", "Concise", "Lengthy", "Wordy"], correct: 1 },
+            { q: "What is the synonym of VACILLATE?", options: ["Waver", "Persist", "Decide", "Continue"], correct: 0 },
+            { q: "What is the synonym of VENERATE?", options: ["Despise", "Revere", "Scorn", "Disregard"], correct: 1 },
+            { q: "What is the synonym of ZEALOT?", options: ["Moderate", "Fanatic", "Skeptic", "Pacifist"], correct: 1 },
+            { q: "What is the synonym of ABATE?", options: ["Subside", "Increase", "Prolong", "Magnify"], correct: 0 },
+            { q: "What is the synonym of ADMONISH?", options: ["Praise", "Scold", "Applaud", "Permit"], correct: 1 },
+            { q: "What is the synonym of ALACRITY?", options: ["Apathy", "Eagerness", "Lethargy", "Slowness"], correct: 1 },
+            { q: "What is the synonym of AMALGAMATE?", options: ["Separate", "Blend", "Divide", "Isolate"], correct: 1 },
+            { q: "What is the synonym of AMBIGUOUS?", options: ["Vague", "Clear", "Definite", "Explicit"], correct: 0 },
+            { q: "What is the synonym of AMELIORATE?", options: ["Worsen", "Improve", "Aggravate", "Decrease"], correct: 1 },
+            { q: "What is the synonym of ANTIPATHY?", options: ["Liking", "Hostility", "Affection", "Fondness"], correct: 1 },
+            { q: "What is the synonym of ARDUOUS?", options: ["Effortless", "Strenuous", "Simple", "Facile"], correct: 1 },
+            { q: "What is the synonym of ASCETIC?", options: ["Luxurious", "Austere", "Self-indulgent", "Hedonistic"], correct: 1 },
+            { q: "What is the synonym of ASSUAGE?", options: ["Intensify", "Soothe", "Aggravate", "Provoke"], correct: 1 },
+            { q: "What is the synonym of ATTENUATE?", options: ["Strengthen", "Weaken", "Expand", "Enlarge"], correct: 1 },
+            { q: "What is the synonym of BOLSTER?", options: ["Undermine", "Support", "Weaken", "Discourage"], correct: 1 },
+            { q: "What is the synonym of BURGEON?", options: ["Wither", "Flourish", "Decrease", "Shrink"], correct: 1 },
+            { q: "What is the synonym of CACOPHONY?", options: ["Harmony", "Harshness", "Melody", "Silence"], correct: 1 },
+            { q: "What is the synonym of CANDOR?", options: ["Deceit", "Frankness", "Dishonesty", "Guile"], correct: 1 },
+            { q: "What is the synonym of CHICANERY?", options: ["Honesty", "Trickery", "Truthfulness", "Sincerity"], correct: 1 },
+            { q: "What is the synonym of COMPLAISANT?", options: ["Defiant", "Obliging", "Stubborn", "Uncooperative"], correct: 1 },
+            { q: "What is the synonym of CONVOLUTED?", options: ["Simple", "Complex", "Straight", "Clear"], correct: 1 },
+            { q: "What is the synonym of CREDULOUS?", options: ["Skeptical", "Gullible", "Astute", "Shrewd"], correct: 1 },
+            { q: "What is the synonym of DECORUM?", options: ["Impropriety", "Propriety", "Rudeness", "Insolence"], correct: 1 },
+            { q: "What is the synonym of DERIDE?", options: ["Praise", "Mock", "Respect", "Admire"], correct: 1 },
+            { q: "What is the synonym of DESICCATE?", options: ["Moisten", "Dehydrate", "Wet", "Soak"], correct: 1 },
+            { q: "What is the synonym of DESULTORY?", options: ["Methodical", "Aimless", "Systematic", "Focused"], correct: 1 },
+            { q: "What is the synonym of DISPARATE?", options: ["Identical", "Diverse", "Similar", "Equal"], correct: 1 },
+            { q: "What is the synonym of DISSEMBLE?", options: ["Reveal", "Feign", "Expose", "Disclose"], correct: 1 },
+            { q: "What is the synonym of EFFICACY?", options: ["Inefficiency", "Effectiveness", "Failure", "Impotence"], correct: 1 },
+            { q: "What is the synonym of EGREGIOUS?", options: ["Outstanding", "Flagrant", "Minor", "Insignificant"], correct: 1 },
+            { q: "What is the synonym of ELOQUENT?", options: ["Inarticulate", "Articulate", "Silent", "Hesitant"], correct: 1 },
+            { q: "What is the synonym of ENMITY?", options: ["Friendship", "Animosity", "Goodwill", "Amity"], correct: 1 },
+            { q: "What is the synonym of EXACERBATE?", options: ["Soothe", "Aggravate", "Alleviate", "Mitigate"], correct: 1 },
+            { q: "What is the synonym of EXEMPLARY?", options: ["Defective", "Commendable", "Flawed", "Poor"], correct: 1 },
+            { q: "What is the synonym of EXIGENCY?", options: ["Urgency", "Leisure", "Unimportance", "Comfort"], correct: 0 },
+            { q: "What is the synonym of FLORID?", options: ["Plain", "Ornate", "Pale", "Simple"], correct: 1 },
+            { q: "What is the synonym of FOMENT?", options: ["Instigate", "Dampen", "Calm", "Quell"], correct: 0 },
+            { q: "What is the synonym of FRUGAL?", options: ["Extravagant", "Thrifty", "Generous", "Wasteful"], correct: 1 },
+            { q: "What is the synonym of GREGARIOUS?", options: ["Introverted", "Sociable", "Reclusive", "Solitary"], correct: 1 },
+            { q: "What is the synonym of HARANGUE?", options: ["Tirade", "Panegyric", "Whisper", "Acclaim"], correct: 0 },
+            { q: "What is the synonym of IMPECCABLE?", options: ["Flawed", "Faultless", "Defective", "Imperfect"], correct: 1 },
+            { q: "What is the synonym of IMPEDE?", options: ["Assist", "Hinder", "Facilitate", "Advance"], correct: 1 },
+            { q: "What is the synonym of INCHOATE?", options: ["Developed", "Rudimentary", "Finished", "Mature"], correct: 1 },
+            { q: "What is the synonym of INIMICAL?", options: ["Friendly", "Hostile", "Amiable", "Harmonious"], correct: 1 },
+            { q: "What is the synonym of INSIDIOUS?", options: ["Harmless", "Treacherous", "Honest", "Sincere"], correct: 1 },
+            { q: "What is the synonym of INSIPID?", options: ["Flavorful", "Bland", "Exciting", "Tasty"], correct: 1 },
+            { q: "What is the synonym of INTREPID?", options: ["Cowardly", "Fearless", "Timid", "Fearful"], correct: 1 },
+            { q: "What is the synonym of IRASCIBLE?", options: ["Calm", "Irritable", "Placid", "Patient"], correct: 1 },
+            { q: "What is the synonym of LAUD?", options: ["Criticize", "Praise", "Condemn", "Blame"], correct: 1 },
+            { q: "What is the synonym of LUCID?", options: ["Confusing", "Clear", "Obscure", "Vague"], correct: 1 },
+            { q: "What is the synonym of MAGNANIMOUS?", options: ["Petty", "Generous", "Stingy", "Mean"], correct: 1 },
+            { q: "What is the synonym of MALEVOLENT?", options: ["Kind", "Spiteful", "Benevolent", "Amiable"], correct: 1 },
+            { q: "What is the synonym of MISANTHROPE?", options: ["Philanthropist", "Cynic", "Humanitarian", "Altruist"], correct: 1 },
+            { q: "What is the synonym of NEFARIOUS?", options: ["Admirable", "Wicked", "Noble", "Virtuous"], correct: 1 }
         ];
 
         const quizContainer = document.getElementById('quiz');
